@@ -28,6 +28,7 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - removes inline style attributes from markup
 - updates navigation markup to use new custom labels and link to new files
 - updates navigation markup for new header styling
+- adds container class to markup
 - updates footer markup for new footer styling
 
 **HOF_Volunteers__PersonalSiteJobListing**
@@ -36,10 +37,14 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - updates markup for job post content
 
 **HOF_Volunteers__PersonalSiteJobCalendar**
--  _new file for future work, no updates_
+- updates markup to make page title h1
 
 **HOF_Volunteers__PersonalSiteContactInfo**
 -  removes width from markup
+- TODO
+    - Make sure that headings are the appropriate level
+    - In Profile component, ensure that labels and values are displayed logically
+    - Investigate if Scheduled Shifts and Vol History can move up under 
 
 **HOF_Volunteers__PersonalSiteReportHours**
 -  _new file for future work, no updates_
