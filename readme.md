@@ -15,10 +15,10 @@ Updates to site template and page layouts must be made by via new files. Below y
 |original|new|
 |---|---|
 HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate
-GW_Volunteers__PersonalSiteJobListing | HOF_Volunteers__PersonalSiteJobListing
-GW_Volunteers__PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
-GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
-GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours 
+GW_Volunteers.PersonalSiteJobListingFS | HOF_Volunteers__PersonalSiteJobListing
+GW_Volunteers.PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
+GW_Volunteers.PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
+GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours 
 
 ### Change Notes
 
@@ -62,4 +62,6 @@ These files deliver style updates for layout and logo graphics for branding.
 
 ## Other Updates
 Some updates can be made to existing items in salesforce.
+- Update Site Detail
+    - Change Site Template to `HOF_PersonalSIteTemplate`
 - Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Volunteer Oakland"
