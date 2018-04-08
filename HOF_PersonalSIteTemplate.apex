@@ -25,17 +25,17 @@
             </div>
             <div class="navbar-inner">              
                 <ul class="nav">
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteJobListing', 'active', '')}">
-                        <a href="{!$Page.GW_Volunteers__PersonalSiteJobListing + '?Language=' + Language + '&nMonthsToShow=6'}" >{!$Label.GW_Volunteers__labelPersonalSiteJobListingTitle}</a>
+                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteJobListing', 'active', '')}">
+                        <a href="{!$Page.HOF_Volunteers__PersonalSiteJobListing + '?Language=' + Language + '&nMonthsToShow=6'}" >{!$Label.HOF_Volunteers__labelPersonalSiteJobListingTitle}</a>
                     </li>
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteJobCalendar', 'active', '')}">
-                        <a href="{!$Page.GW_Volunteers__PersonalSiteJobCalendar + '?Language=' + Language + '&nMonthsToShow=1'}" >{!$Label.GW_Volunteers__labelPersonalSiteJobCalendarTitle}</a>
+                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteJobCalendar', 'active', '')}">
+                        <a href="{!$Page.HOF_Volunteers__PersonalSiteJobCalendar + '?Language=' + Language + '&nMonthsToShow=1'}" >{!$Label.HOF_Volunteers__labelPersonalSiteJobCalendarTitle}</a>
                     </li>
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteContactInfo', 'active', '')}">
-                        <a href="{!$Page.GW_Volunteers__PersonalSiteContactInfo + '?Language=' + Language}" >{!$Label.GW_Volunteers__labelPersonalSiteContactInfoTitle}</a>
+                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteContactInfo', 'active', '')}">
+                        <a href="{!$Page.HOF_Volunteers__PersonalSiteContactInfo + '?Language=' + Language}" >{!$Label.HOF_Volunteers__labelPersonalSiteContactInfoTitle}</a>
                     </li>
-                    <li class="{!IF($CurrentPage.Name == 'GW_Volunteers__PersonalSiteReportHours', 'active', '')}">
-                        <a href="{!$Page.GW_Volunteers__PersonalSiteReportHours + '?Language=' + Language}" >{!$Label.GW_Volunteers__labelPersonalSiteReportHoursTitle}</a>
+                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteReportHours', 'active', '')}">
+                        <a href="{!$Page.HOF_Volunteers__PersonalSiteReportHours + '?Language=' + Language}" >{!$Label.HOF_Volunteers__labelPersonalSiteReportHoursTitle}</a>
                     </li>                
                 </ul>
             </div>          

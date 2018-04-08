@@ -9,17 +9,29 @@ HOF uses a salesforce package that containes boilerplate code that must be clone
 ## New Files
 |original|new|
 |---|---|
-GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
+HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate
 GW_Volunteers__PersonalSiteJobListing | HOF_Volunteers__PersonalSiteJobListing
 GW_Volunteers__PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
+GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
 GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours 
-HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate
 
 ### Change Notes
 
 **HOF_PersonalSIteTemplate**
 - adds `apex:stylesheet` for custom CSS
 - adds `apex:stylesheet` for brand fonts
+- removes inline style attributes from markup
+- updates navigation markup to use new custom labels and link to new files
+- updates footer markup for new footer styling
+
+**HOF_Volunteers__PersonalSiteJobCalendar**
+-  new file for future work, no updates
+
+**HOF_Volunteers__PersonalSiteContactInfo**
+-  
+
+**HOF_Volunteers__PersonalSiteReportHours**
+-  new file for future work, no updates
 
 ## New Custom Labels
 |original|new|
