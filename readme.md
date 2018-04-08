@@ -1,12 +1,12 @@
 # Historic Oakland Foundation: Volunteer Site Updates
 
-The HOF volunteer site uses a salesforce package that containes boilerplate code and labels that must be cloned in order to be modified. Below is documentation regarding changes that need to be made to support layout updates:
+The HOF volunteer site uses a salesforce package that contains boilerplate code and labels that must be cloned in order to be modified. Below is documentation regarding changes that need to be made to support layout updates:
 - [Cloned Files](#cloned-files): updates to site template and page layouts
 - [New Custom Labels](#new-custom-labels): updates copy for navigation tabs
 - [New Static Resources](#new-static-resources): adds stylesheet and logo graphics
 - [Other Updates](#other-updates): to-dos for content and settings updates
 
-> **Note:** Completing all of these changes may not be enough in order to make the updates visiable to the public. Integration and publishing tasks need to be outlined and executed for this work to be complete
+> **Note:** Completing all of these changes may not be enough in order to make the updates visible to the public. Integration and publishing tasks need to be outlined and executed for this work to be complete
 
 ## Cloned Files
 
@@ -59,7 +59,7 @@ Updates to copy for navigation tabs must be done by making new labels and provid
 
 |orig label|orig val|new label|new val
 |---|---|---|---|
-labelPersonalSiteJobListingTitle|Volunter Jobs|HOF_Volunteers__labelPersonalSiteJobListingTitle|Volunteer Jobs
+labelPersonalSiteJobListingTitle|Volunteer Jobs|HOF_Volunteers__labelPersonalSiteJobListingTitle|Volunteer Jobs
 labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers__labelPersonalSiteJobCalendarTitle|Calendar
 labelPersonalSiteContactInfoTitle|View your information|HOF_Volunteers__labelPersonalSiteContactInfoTitle|Your Info
 labelPersonalSiteReportHoursTitle|Report Hours|HOF_Volunteers__labelPersonalSiteReportHoursTitle|Report Hours
