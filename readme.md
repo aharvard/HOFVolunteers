@@ -36,7 +36,7 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 
 ## New Custom Labels
 |orig label|orig val|new label|new val
-|---|---|
+|---|---|---|---|
 labelPersonalSiteJobListingTitle|Volunter Jobs|HOF_Volunteers__labelPersonalSiteJobListingTitle|Volunteer Jobs
 labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers__labelPersonalSiteJobCalendarTitle|Calendar
 labelPersonalSiteContactInfoTitle|View your information|HOF_Volunteers__labelPersonalSiteContactInfoTitle|Your Info
