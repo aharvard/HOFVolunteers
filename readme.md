@@ -39,7 +39,7 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 -  _new file for future work, no updates_
 
 **HOF_Volunteers__PersonalSiteContactInfo**
--  ... 
+-  removes width from markup
 
 **HOF_Volunteers__PersonalSiteReportHours**
 -  _new file for future work, no updates_

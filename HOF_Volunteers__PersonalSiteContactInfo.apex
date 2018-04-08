@@ -38,7 +38,7 @@
 
 <apex:composition template="{!$Site.Template}">
     <apex:define name="body"> 
-        <apex:form style="width:940px;">
+        <apex:form>
             <apex:messages style="color:red;" />            
             <apex:actionStatus id="statusLoad" onstart="document.getElementById('divLoading').style.display='inline';" onstop="document.getElementById('divLoading').style.display='none';" />                              
             <div class="cssLoading" id="divLoading" style="display:none" >
