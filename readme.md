@@ -15,10 +15,11 @@ Updates to site template and page layouts must be made by via new files. Below y
 |original|new|
 |---|---|
 HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate
-GW_Volunteers.PersonalSiteJobListingFS | HOF_Volunteers__PersonalSiteJobListing
-GW_Volunteers.PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
-GW_Volunteers.PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
-GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours 
+GW_Volunteers__PersonalSiteJobListing | HOF_Volunteers__PersonalSiteJobListing
+GW_Volunteers__VolunteersJobListingFS | HOF_Volunteers__VolunteersSiteJobListingFS
+GW_Volunteers__PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
+GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
+GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours 
 
 ### Change Notes
 
@@ -32,6 +33,9 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - updates footer markup for new footer styling
 
 **HOF_Volunteers__PersonalSiteJobListing**
+- - updates markup to make page title h1
+
+**HOF_Volunteers__VolunteersSiteJobListingFS**
 - updates markup for job name heading 
 - updates markup for list of volunteer jobs by wrapping in div for styling
 - updates markup for job post content

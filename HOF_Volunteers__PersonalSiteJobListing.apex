@@ -31,7 +31,7 @@
 <apex:page controller="GW_Volunteers.VOL_CTRL_PersonalSiteJobListing" showheader="false" sidebar="false" standardStylesheets="false" language="{!strLanguage}" cache="false" >
 	<apex:composition template="{!$Site.Template}">
 		<apex:define name="body">
-			<h3>{!$Label.gw_volunteers__labelpersonalsitejoblistingtitle}</h3>
+			<h1>{!$Label.gw_volunteers__labelpersonalsitejoblistingtitle}</h3>
 			<apex:include pageName="GW_Volunteers__VolunteersJobListingFS"/>
    		</apex:define>
    	</apex:composition>
