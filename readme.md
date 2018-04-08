@@ -12,14 +12,14 @@ The HOF volunteer site uses a salesforce package that containes boilerplate code
 
 Updates to site template and page layouts must be made by via new files. Below you will find change notes on how the new files are different from the originals.
 
-|original|new|
-|---|---|
-HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate
-GW_Volunteers__PersonalSiteJobListing | HOF_Volunteers__PersonalSiteJobListing
-GW_Volunteers__VolunteersJobListingFS | HOF_Volunteers__VolunteersSiteJobListingFS
-GW_Volunteers__PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
-GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo
-GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours 
+|original|new|description
+|---|---|---|
+HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate | Site Layout (header, nav, body, footer)
+GW_Volunteers__PersonalSiteJobListing | HOF_Volunteers__PersonalSiteJobListing | User Facing Page
+GW_Volunteers__VolunteersJobListingFS | HOF_Volunteers__VolunteersSiteJobListingFS | Jobs Partial
+GW_Volunteers__PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar | User Facing Page
+GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo | User Facing Page
+GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours | User Facing Page
 
 ### Change Notes
 
