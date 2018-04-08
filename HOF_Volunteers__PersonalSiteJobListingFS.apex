@@ -160,118 +160,124 @@
             <apex:variable var="containerClass" value="{!IF(job.GW_Volunteers__External_Signup_Url__c != null, 'externalJob', IF(jobAllShiftsInThePast, 'pastEvent', ''))}"/>
 
             <!-- Repeated Job Posting -->
-            <div id="jobContainer" class="{!containerClass}">
+            <div id="jobContainer" class="hof-vol-job">
+                
+                <!-- Job Content above Job Table -->
+                <div class="job-content">
 
-                <!-- Job Heading -->
-                <apex:outputPanel rendered="{!ShowJobName}">
-                    <h2>
-                        <apex:outputText value="{!job.Name}" styleClass="cssJobName" />
-                    </h2>
-                </apex:outputPanel>
-
-                <!-- Description -->
-                <apex:outputPanel rendered="{!ShowDescription}">
-                    <p>
-                        <apex:outputField value="{!job.GW_Volunteers__Description__c}" />
-                    </p>
-                </apex:outputPanel>
-
-                <!-- Skills Needed -->
-                <apex:outputPanel rendered="{!ShowSkills && job.GW_Volunteers__Skills_Needed__c <> null}">
-                    <p class="cssJobSkills">{!$ObjectType.Contact.Fields.Volunteer_Skills__c.Label}:&nbsp;&nbsp;
-                        <apex:outputField value="{!job.GW_Volunteers__Skills_Needed__c}" />
-                    </p>
-                </apex:outputPanel>
-
-                <!-- Locatoin Address -->
-                <apex:outputPanel rendered="{!ShowLocationAddress && job.GW_Volunteers__Location_Street__c <> null}">
-                    <p class="cssJobLocationAddress">
-                        <apex:outputField value="{!job.GW_Volunteers__Location_Street__c}" />
-                        <br/>
-                        <apex:outputField value="{!job.GW_Volunteers__Location_City__c}" />,&nbsp;
-                        <apex:outputField value="{!job.GW_Volunteers__Location__c}" />&nbsp;&nbsp;
-                        <apex:outputField value="{!job.GW_Volunteers__Location_Zip_Postal_Code__c}" />
-                        <apex:outputPanel rendered="{!ShowLocationMap && strGoogleMapAPIKey <> null}">
-                            <p class="cssJobLocationMap">
-                                <iframe class="cssGoogleMapIFrame" src="https://www.google.com/maps/embed/v1/place?q={!job.GW_Volunteers__Location_Street__c}+{!job.GW_Volunteers__Location_City__c}+{!job.GW_Volunteers__Location__c}+{!job.GW_Volunteers__Location_Zip_Postal_Code__c}&key={!strGoogleMapAPIKey}">
-                                </iframe>
-                            </p>
-                        </apex:outputPanel>
-                    </p>
-                </apex:outputPanel>
-
-                <!-- Location Info -->
-                <apex:outputPanel rendered="{!ShowLocationInfo && job.GW_Volunteers__Location_Information__c <> null}">
-                    <p>
-                        <apex:outputField value="{!job.GW_Volunteers__Location_Information__c}" />
-                    </p>
-                </apex:outputPanel>
-
-                <!-- Number of Shifts -->
-                <apex:outputPanel id="panelJobOnly" rendered="{!(job.GW_Volunteers__Number_of_Shifts__c == 0 || ShowShifts == false) && job.GW_Volunteers__External_Signup_Url__c == null}">
-                    <input type="button" id="{!job.Id}" value="{!$Label.gw_volunteers__labelbuttonsignup}" class="cssJobShiftSignup btn" onclick="OpenSignUpDlg('{!job.Id}', null, '{!JSENCODE(job.Name)}', ''); return false;"
-                    />
-                </apex:outputPanel>
-
-                <apex:outputPanel id="panelExternalJob" rendered="{!job.GW_Volunteers__External_Signup_Url__c != null && NOT(jobAllShiftsInThePast)}">
-                    <apex:outputLink target="_blank" styleClass="externalJobLink" value="{!job.GW_Volunteers__External_Signup_Url__c}">{!$Label.gw_volunteers__labelexternalsignupurl}</apex:outputLink>
-                    <br/>
-                    <br/>
-                </apex:outputPanel>
-
-
-                <apex:outputPanel id="panelEventInThePast" rendered="{!jobAllShiftsInThePast}">
-                    <apex:outputText value="{!$Label.gw_volunteers__labeleventinthepast}" /> &nbsp;
-                    <apex:outputText rendered="{!job.GW_Volunteers__First_Shift__c != null}" value="{!$Label.gw_volunteers__labelfirstshift}"
-                    />
-                    <apex:outputPanel rendered="{!job.GW_Volunteers__First_Shift__c != null}" id="txtFirstShiftDate">
-                        <script>
-                            var dt = new Date('{!job.GW_Volunteers__First_Shift__c}');
-                            var strFirstShift = MyDateFormat(dt, '{!JSENCODE(strDateFormat)}');
-                            document.write(strFirstShift);
-                        </script>
+                    <!-- Job Heading -->
+                    <apex:outputPanel rendered="{!ShowJobName}">
+                        <h2>
+                            <apex:outputText value="{!job.Name}" styleClass="cssJobName" />
+                        </h2>
                     </apex:outputPanel>
-                </apex:outputPanel>
+
+                    <!-- Description -->
+                    <apex:outputPanel rendered="{!ShowDescription}">
+                        <apex:outputField value="{!job.GW_Volunteers__Description__c}" />
+                    </apex:outputPanel>
+
+                    <!-- Skills Needed -->
+                    <apex:outputPanel rendered="{!ShowSkills && job.GW_Volunteers__Skills_Needed__c <> null}">
+                        <p class="cssJobSkills">{!$ObjectType.Contact.Fields.Volunteer_Skills__c.Label}:&nbsp;&nbsp;
+                            <apex:outputField value="{!job.GW_Volunteers__Skills_Needed__c}" />
+                        </p>
+                    </apex:outputPanel>
+
+                    <!-- Locatoin Address -->
+                    <apex:outputPanel rendered="{!ShowLocationAddress && job.GW_Volunteers__Location_Street__c <> null}">
+                        <p class="cssJobLocationAddress">
+                            <apex:outputField value="{!job.GW_Volunteers__Location_Street__c}" />
+                            <br/>
+                            <apex:outputField value="{!job.GW_Volunteers__Location_City__c}" />,&nbsp;
+                            <apex:outputField value="{!job.GW_Volunteers__Location__c}" />&nbsp;&nbsp;
+                            <apex:outputField value="{!job.GW_Volunteers__Location_Zip_Postal_Code__c}" />
+                            <apex:outputPanel rendered="{!ShowLocationMap && strGoogleMapAPIKey <> null}">
+                                <p class="cssJobLocationMap">
+                                    <iframe class="cssGoogleMapIFrame" src="https://www.google.com/maps/embed/v1/place?q={!job.GW_Volunteers__Location_Street__c}+{!job.GW_Volunteers__Location_City__c}+{!job.GW_Volunteers__Location__c}+{!job.GW_Volunteers__Location_Zip_Postal_Code__c}&key={!strGoogleMapAPIKey}">
+                                    </iframe>
+                                </p>
+                            </apex:outputPanel>
+                        </p>
+                    </apex:outputPanel>
+
+                    <!-- Location Info -->
+                    <apex:outputPanel rendered="{!ShowLocationInfo && job.GW_Volunteers__Location_Information__c <> null}">
+                        <p>
+                            <apex:outputField value="{!job.GW_Volunteers__Location_Information__c}" />
+                        </p>
+                    </apex:outputPanel>
+
+                    <!-- Number of Shifts -->
+                    <apex:outputPanel id="panelJobOnly" rendered="{!(job.GW_Volunteers__Number_of_Shifts__c == 0 || ShowShifts == false) && job.GW_Volunteers__External_Signup_Url__c == null}">
+                        <input type="button" id="{!job.Id}" value="{!$Label.gw_volunteers__labelbuttonsignup}" class="cssJobShiftSignup btn" onclick="OpenSignUpDlg('{!job.Id}', null, '{!JSENCODE(job.Name)}', ''); return false;"
+                        />
+                    </apex:outputPanel>
+
+                    <apex:outputPanel id="panelExternalJob" rendered="{!job.GW_Volunteers__External_Signup_Url__c != null && NOT(jobAllShiftsInThePast)}">
+                        <apex:outputLink target="_blank" styleClass="externalJobLink" value="{!job.GW_Volunteers__External_Signup_Url__c}">{!$Label.gw_volunteers__labelexternalsignupurl}</apex:outputLink>
+                        <br/>
+                        <br/>
+                    </apex:outputPanel>
+
+                    <apex:outputPanel id="panelEventInThePast" rendered="{!jobAllShiftsInThePast}">
+                        <apex:outputText value="{!$Label.gw_volunteers__labeleventinthepast}" /> &nbsp;
+                        <apex:outputText rendered="{!job.GW_Volunteers__First_Shift__c != null}" value="{!$Label.gw_volunteers__labelfirstshift}"
+                        />
+                        <apex:outputPanel rendered="{!job.GW_Volunteers__First_Shift__c != null}" id="txtFirstShiftDate">
+                            <script>
+                                var dt = new Date('{!job.GW_Volunteers__First_Shift__c}');
+                                var strFirstShift = MyDateFormat(dt, '{!JSENCODE(strDateFormat)}');
+                                document.write(strFirstShift);
+                            </script>
+                        </apex:outputPanel>
+                    </apex:outputPanel>
+
+                </div>
 
                 <!-- Job Slots: Table of Signups -->
-                <apex:dataTable value="{!job.Volunteer_Job_Slots__r}" var="shift" id="rptShifts" columnClasses="cssJobShiftSignup" rendered="{!ShowShifts}">
+                <div class="job-table">
+                    
+                    <apex:dataTable value="{!job.Volunteer_Job_Slots__r}" var="shift" id="rptShifts" columnClasses="cssJobShiftSignup" rendered="{!ShowShifts}">
 
-                    <!-- Column 1 -->
-                    <apex:column style="text-align:center;">
+                        <!-- Column 1 -->
+                        <apex:column style="text-align:center;">
+                            
+                            <apex:outputPanel rendered="{!shift.GW_Volunteers__Number_of_Volunteers_Still_Needed__c != 0 && DATEVALUE(shift.GW_Volunteers__Start_Date_Time__c) >= TODAY() && job.GW_Volunteers__External_Signup_Url__c == null}">
+                                <a id="{!shift.Id}" href="SignUp" onclick="var x = '{!JSENCODE(shift.System_Note__c)}'; if (x == '') x = JobShiftDateTimeString('{!shift.Start_Date_Time__c}', '{!shift.Duration__c}');OpenSignUpDlg('{!job.Id}', '{!shift.Id}', '{!JSENCODE(job.Name)}', x);return false;">{!$Label.labelLinkSignUp}</a>
+                            </apex:outputPanel>
+                            
+                            <apex:outputText value="{!$Label.gw_volunteers__labellinkfull}" style="font-style:italic;" rendered="{!BLANKVALUE(shift.GW_Volunteers__Number_of_Volunteers_Still_Needed__c, -1) == 0 && DATEVALUE(shift.GW_Volunteers__Start_Date_Time__c) >= TODAY()}"/>
+                            
+                            <apex:outputText value="{!$Label.gw_volunteers__labelshiftclosed}" style="font-style:italic;" rendered="{!DATEVALUE(shift.GW_Volunteers__Start_Date_Time__c) < TODAY()}"/>&nbsp;&nbsp;&nbsp;
+                        </apex:column>
+
+                        <!-- Column 2 -->
+                        <apex:column>
+                            <div id="txtShiftStartDateTime">
+                                <script>
+                                    var strDT = '{!JSENCODE(shift.System_Note__c)}';
+                                    if (strDT == '') strDT = JobShiftDateTimeString('{!shift.Start_Date_Time__c}',
+                                        '{!shift.Duration__c}');
+                                    document.write(strDT);
+                                </script>&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </apex:column>
+
+                        <!-- Column 3 -->
+                        <apex:column rendered="{!ShowNumberAvailable}">
+                            <apex:outputText value="{!$Label.labelShiftNumbers}&nbsp;&nbsp;&nbsp;" escape="false">
+                                <apex:param value="{!NULLVALUE(shift.GW_Volunteers__Total_Volunteers__c, 0)} " />
+                                <apex:param value="{!NULLVALUE(shift.GW_Volunteers__Number_of_Volunteers_Still_Needed__c, 0)}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column>
+                            <apex:outputField value="{!shift.GW_Volunteers__Description__c}" />
+                        </apex:column>
                         
-                        <apex:outputPanel rendered="{!shift.GW_Volunteers__Number_of_Volunteers_Still_Needed__c != 0 && DATEVALUE(shift.GW_Volunteers__Start_Date_Time__c) >= TODAY() && job.GW_Volunteers__External_Signup_Url__c == null}">
-                            <a id="{!shift.Id}" href="SignUp" onclick="var x = '{!JSENCODE(shift.System_Note__c)}'; if (x == '') x = JobShiftDateTimeString('{!shift.Start_Date_Time__c}', '{!shift.Duration__c}');OpenSignUpDlg('{!job.Id}', '{!shift.Id}', '{!JSENCODE(job.Name)}', x);return false;">{!$Label.labelLinkSignUp}</a>
-                        </apex:outputPanel>
-                        
-                        <apex:outputText value="{!$Label.gw_volunteers__labellinkfull}" style="font-style:italic;" rendered="{!BLANKVALUE(shift.GW_Volunteers__Number_of_Volunteers_Still_Needed__c, -1) == 0 && DATEVALUE(shift.GW_Volunteers__Start_Date_Time__c) >= TODAY()}"/>
-                        
-                        <apex:outputText value="{!$Label.gw_volunteers__labelshiftclosed}" style="font-style:italic;" rendered="{!DATEVALUE(shift.GW_Volunteers__Start_Date_Time__c) < TODAY()}"/>&nbsp;&nbsp;&nbsp;
-                    </apex:column>
-
-                    <!-- Column 2 -->
-                    <apex:column>
-                        <div id="txtShiftStartDateTime">
-                            <script>
-                                var strDT = '{!JSENCODE(shift.System_Note__c)}';
-                                if (strDT == '') strDT = JobShiftDateTimeString('{!shift.Start_Date_Time__c}',
-                                    '{!shift.Duration__c}');
-                                document.write(strDT);
-                            </script>&nbsp;&nbsp;&nbsp;
-                        </div>
-                    </apex:column>
-
-                    <!-- Column 3 -->
-                    <apex:column rendered="{!ShowNumberAvailable}">
-                        <apex:outputText value="{!$Label.labelShiftNumbers}&nbsp;&nbsp;&nbsp;" escape="false">
-                            <apex:param value="{!NULLVALUE(shift.GW_Volunteers__Total_Volunteers__c, 0)} " />
-                            <apex:param value="{!NULLVALUE(shift.GW_Volunteers__Number_of_Volunteers_Still_Needed__c, 0)}" />
-                        </apex:outputText>
-                    </apex:column>
-
-                    <apex:column>
-                        <apex:outputField value="{!shift.GW_Volunteers__Description__c}" />
-                    </apex:column>
-                </apex:dataTable>
+                    </apex:dataTable>
+                </div>
 
                 <br/>
                 <br/>

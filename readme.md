@@ -33,6 +33,7 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 **HOF_Volunteers__PersonalSiteJobListing**
 - updates markup for job name heading 
 - updates markup for list of volunteer jobs by wrapping in div for styling
+- updates markup for job post content
 
 **HOF_Volunteers__PersonalSiteJobCalendar**
 -  _new file for future work, no updates_
@@ -65,7 +66,7 @@ These files deliver style updates for layout and logo graphics for branding.
 |HOF Lockup Graphic|HOF_Volunteers__LogoTextWhite.svg|
 
 ## Other Updates
-Some updates can be made to existing items in salesforce.
+Some updates that must be made to existing items in salesforce.
 - Update Site Detail
     - Change Site Template to `HOF_PersonalSIteTemplate`
 - Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Volunteer Oakland"
