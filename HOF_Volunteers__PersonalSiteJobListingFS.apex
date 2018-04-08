@@ -149,13 +149,14 @@
     </script>
     <apex:Messages style="color:red;" />
     <apex:outputPanel rendered="{!fCalendar}" layout="block" style="text-align:right">
-        <apex:outputLink value="{!$Site.CurrentSiteUrl + IF(fPersonalSite, 'GW_Volunteers__PersonalSiteJobCalendar', 'GW_Volunteers__JobCalendar') + '?' + strParams}"
-            id="linkCal1">{!$Label.gw_volunteers__labelreturntocalendar}</apex:outputLink>
+        <apex:outputLink value="{!$Site.CurrentSiteUrl + IF(fPersonalSite, 'GW_Volunteers__PersonalSiteJobCalendar', 'GW_Volunteers__JobCalendar') + '?' + strParams}" id="linkCal1">{!$Label.gw_volunteers__labelreturntocalendar}</apex:outputLink>
     </apex:outputPanel>
 
+    <!-- Vol Jobs -->
     <apex:repeat value="{!listVolunteerJobs}" var="job" id="rptJobs">
-        <apex:variable var="containerClass" value="{!IF(job.GW_Volunteers__External_Signup_Url__c != null, 'externalJob', IF(jobAllShiftsInThePast, 'pastEvent', ''))}"
-        />
+        <apex:variable var="containerClass" value="{!IF(job.GW_Volunteers__External_Signup_Url__c != null, 'externalJob', IF(jobAllShiftsInThePast, 'pastEvent', ''))}"/>
+
+        <!-- Repeated Job Posting -->
         <div id="jobContainer" class="{!containerClass}">
 
             <apex:outputPanel rendered="{!ShowJobName}">
@@ -258,10 +259,11 @@
             </apex:outputPanel>
         </div>
     </apex:repeat>
+
+
     <apex:outputText value="{!$Label.gw_volunteers__labelmessagenojobs}" rendered="{!NOT(VolunteersHasJobs)}" />
     <apex:outputPanel rendered="{!fCalendar}" layout="block" style="text-align:right">
-        <apex:outputLink value="{!$Site.CurrentSiteUrl + IF(fPersonalSite, 'GW_Volunteers__PersonalSiteJobCalendar', 'GW_Volunteers__JobCalendar') + '?' + strParams}"
-            id="linkCal2">{!$Label.gw_volunteers__labelreturntocalendar}</apex:outputLink>
+        <apex:outputLink value="{!$Site.CurrentSiteUrl + IF(fPersonalSite, 'GW_Volunteers__PersonalSiteJobCalendar', 'GW_Volunteers__JobCalendar') + '?' + strParams}" id="linkCal2">{!$Label.gw_volunteers__labelreturntocalendar}</apex:outputLink>
     </apex:outputPanel>
 
     <!-- this div contains the signup dialog we'll use jQuery to display -->
