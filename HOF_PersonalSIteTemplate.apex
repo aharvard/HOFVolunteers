@@ -54,7 +54,7 @@
         </div>
     </apex:insert>
     
-    <div>
+    <div class="container">
         <apex:insert name="body" />
     </div>
     
