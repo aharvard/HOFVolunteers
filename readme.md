@@ -29,7 +29,7 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - removes inline style attributes from markup
 - updates navigation markup to use new custom labels and link to new files
 - updates navigation markup for new header styling
-- adds container class to markup
+- updates markup around `apex:insert name="body"` with container class and main element
 - updates footer markup for new footer styling
 
 **HOF_Volunteers__PersonalSiteJobListing**

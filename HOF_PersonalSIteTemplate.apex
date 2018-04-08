@@ -54,9 +54,9 @@
         </div>
     </apex:insert>
     
-    <div class="container">
+    <main class="container">
         <apex:insert name="body" />
-    </div>
+    </main>
     
     <!-- Modified Footer -->
     <apex:insert name="footer">    
