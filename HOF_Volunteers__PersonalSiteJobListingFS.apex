@@ -159,11 +159,13 @@
         <!-- Repeated Job Posting -->
         <div id="jobContainer" class="{!containerClass}">
 
+            <!-- Job Heading -->
             <apex:outputPanel rendered="{!ShowJobName}">
-                <p>
+                <h2>
                     <apex:outputText value="{!job.Name}" styleClass="cssJobName" />
-                </p>
+                </h2>
             </apex:outputPanel>
+
             <apex:outputPanel rendered="{!ShowDescription}">
                 <p>
                     <apex:outputField value="{!job.GW_Volunteers__Description__c}" />
@@ -252,6 +254,7 @@
                 <apex:column>
                     <apex:outputField value="{!shift.GW_Volunteers__Description__c}" /></apex:column>
             </apex:dataTable>
+
             <br/>
             <br/>
             <apex:outputPanel rendered="{!NOT(fCalendar)}">

@@ -34,7 +34,7 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 -  new file for future work, no updates
 
 **HOF_Volunteers__PersonalSiteContactInfo**
--  
+-  updates markup for job name heading 
 
 **HOF_Volunteers__PersonalSiteReportHours**
 -  new file for future work, no updates
