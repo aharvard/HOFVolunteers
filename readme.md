@@ -33,7 +33,7 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - updates footer markup for new footer styling
 
 **HOF_Volunteers__PersonalSiteJobListing**
-- - updates markup to make page title h1
+- updates markup to make page title h1
 
 **HOF_Volunteers__VolunteersSiteJobListingFS**
 - updates markup for job name heading 
