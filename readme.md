@@ -1,7 +1,7 @@
 # Historic Oakland Foundation: Volunteer Site Updates
 
 HOF uses a salesforce package that containes boilerplate code that must be cloned in order to be modified. In addtion to making code updates. Below you will find:
-- cloned files: updates the layouts
+- cloned files: updates to site template and page layouts
 - new custom fields: updates copy for navigation tabs
 - new static resources: Stylesheet and graphics
 - other updates: content and settings updates
@@ -35,12 +35,12 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 -  new file for future work, no updates
 
 ## New Custom Labels
-|original|new|
+|orig label|orig val|new label|new val
 |---|---|
-labelPersonalSiteJobListingTitle|HOF_Volunteers__labelPersonalSiteJobListingTitle
-labelPersonalSiteJobCalendarTitle|HOF_Volunteers__labelPersonalSiteJobCalendarTitle
-labelPersonalSiteContactInfoTitle|HOF_Volunteers__labelPersonalSiteContactInfoTitle
-labelPersonalSiteReportHoursTitle|HOF_Volunteers__labelPersonalSiteReportHoursTitle
+labelPersonalSiteJobListingTitle|Volunter Jobs|HOF_Volunteers__labelPersonalSiteJobListingTitle|Volunteer Jobs
+labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers__labelPersonalSiteJobCalendarTitle|Calendar
+labelPersonalSiteContactInfoTitle|View your information|HOF_Volunteers__labelPersonalSiteContactInfoTitle|Your Info
+labelPersonalSiteReportHoursTitle|Report Hours|HOF_Volunteers__labelPersonalSiteReportHoursTitle|Report Hours
 
 ## New Static Resources
 |resource|file name|
