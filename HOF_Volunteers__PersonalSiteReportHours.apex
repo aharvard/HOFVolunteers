@@ -31,7 +31,7 @@
 <apex:page controller="GW_Volunteers.VOL_CTRL_PersonalSiteReportHours" showheader="false" sidebar="false" standardStylesheets="false" language="{!strLanguage}" cache="false" >
 	<apex:composition template="{!$Site.Template}">
 		<apex:define name="body">
-			<h3>{!$Label.gw_volunteers__labelpersonalsitereporthourstitle}</h3>
+			<h1>{!$Label.gw_volunteers__labelpersonalsitereporthourstitle}</h1>
 			<apex:include pageName="GW_Volunteers__VolunteersReportHours"/>
    		</apex:define>
    	</apex:composition>

@@ -51,7 +51,7 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
     - Investigate if Scheduled Shifts and Vol History can move up under 
 
 **HOF_Volunteers__PersonalSiteReportHours**
--  _new file for future work, no updates_
+-  updates markup to make page title h1 
 
 ## New Custom Labels
 
