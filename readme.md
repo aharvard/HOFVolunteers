@@ -1,12 +1,14 @@
 # Historic Oakland Foundation: Volunteer Site Updates
 
-HOF uses a salesforce package that containes boilerplate code that must be cloned in order to be modified. In addtion to making code updates. Below you will find:
+The HOF volunteer site uses a salesforce package that containes boilerplate code and labels that must be cloned in order to be modified. Below is documentation regarding changes that need to be made to support layout updates:
 - [Cloned Files](#cloned-files): updates to site template and page layouts
 - [New Custom Labels](#new-custom-labels): updates copy for navigation tabs
-- [New Static Resources](#new-static-resources): stylesheet and logo graphics
-- [Other Updates](#other-updates): content and settings updates
+- [New Static Resources](#new-static-resources): adds stylesheet and logo graphics
+- [Other Updates](#other-updates): to-dos for content and settings updates
 
-## Coloned Files
+> **Note:** Completing all of these changes may not be enough in order to make the updates visiable to the public. Integration and publishing tasks need to be outlined and executed for this work to be complete
+
+## Cloned Files
 |original|new|
 |---|---|
 HOFPersonalSiteTemplate | HOF_PersonalSIteTemplate
