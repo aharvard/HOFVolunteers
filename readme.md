@@ -30,11 +30,14 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - updates navigation markup for new header styling
 - updates footer markup for new footer styling
 
+**HOF_Volunteers__PersonalSiteJobListing**
+-  updates markup for job name heading 
+
 **HOF_Volunteers__PersonalSiteJobCalendar**
 -  new file for future work, no updates
 
 **HOF_Volunteers__PersonalSiteContactInfo**
--  updates markup for job name heading 
+-  new file for future work, no updates 
 
 **HOF_Volunteers__PersonalSiteReportHours**
 -  new file for future work, no updates
