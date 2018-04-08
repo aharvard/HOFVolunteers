@@ -34,13 +34,13 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 -  updates markup for job name heading 
 
 **HOF_Volunteers__PersonalSiteJobCalendar**
--  new file for future work, no updates
+-  _new file for future work, no updates_
 
 **HOF_Volunteers__PersonalSiteContactInfo**
--  new file for future work, no updates 
+-  ... 
 
 **HOF_Volunteers__PersonalSiteReportHours**
--  new file for future work, no updates
+-  _new file for future work, no updates_
 
 ## New Custom Labels
 
