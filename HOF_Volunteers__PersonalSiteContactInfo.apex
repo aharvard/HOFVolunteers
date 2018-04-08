@@ -50,13 +50,13 @@
         
             <apex:pageBlock id="pbRelatedLists" >
                     
-            <!-- Main Container ----------------------------------------- -->
+            <!-- Main Container  -->
             <div class="container-fluid">
             
-                <!-- Profile & Graph ----------------------------------------- -->  
+                <!-- Profile & Graph  -->  
                 <div class="row-fluid">
                 
-                    <!-- Profile ----------------------------------------- -->
+                    <!-- Profile  -->
                     <apex:outputPanel layout="block" styleClass="{!IF(isEditing, 'span12', 'span3')}" id="volunteerProfile">
                         <div class="well sidebar-nav well-large" style="text-align:center; word-wrap: break-word">
                             <div style="{!IF(isEditing, 'display: inline-table;', '')}">
@@ -83,11 +83,11 @@
                     </apex:outputPanel>
         
                     
-                    <!-- Spacer ----------------------------------------- -->
+                    <!-- Spacer  -->
                     <apex:outputPanel layout="block" id="pbSpacer1" rendered="{!NOT(isEditing)}" styleClass="span1">&nbsp;
                     </apex:outputPanel>
                     
-                    <!-- No Hours ----------------------------------------- -->
+                    <!-- No Hours  -->
                     <apex:outputPanel layout="block" id="pbNoHours" rendered="{!AND(NOT(isEditing),NOT(hasCompletedHours))}" styleClass="span8">
                         <div class="well large">
                             <h2>{!$Label.gw_volunteers__labelcontactinfonewvolunteertitle}</h2>
@@ -95,7 +95,7 @@
                         </div>
                     </apex:outputPanel>
                     
-                    <!-- Graph ----------------------------------------- -->
+                    <!-- Graph  -->
                     <apex:outputPanel layout="block" id="pbGraph" rendered="{!AND(NOT(isEditing), hasCompletedHours)}" styleClass="span8">                  
                         <div class="well large">
                             <h3>{!$Label.gw_volunteers__labelcontactinfochart}</h3>
@@ -110,7 +110,7 @@
                             </apex:chart>
                         </div>
                 
-                        <!-- Volunteer Stats ----------------------------------------- -->
+                        <!-- Volunteer Stats  -->
                         <div class="row-fluid">
                             <!-- volunteer activity label {!$Label.labelContactInfoPanel2} -->
                             <div class="span3" style="text-align:center; line-height:50%;"><h4 style="line-height:120%;">{!strRank}</h4>
@@ -132,10 +132,10 @@
                 </div>              
                 <!--/row-fluid-->
         
-                <!-- Schedules ----------------------------------------- -->
+                <!-- Schedules  -->
                 <div class="row-fluid">
     
-                    <!-- Upcoming Shifts ----------------------------------------- -->
+                    <!-- Upcoming Shifts  -->
                     <div class="span6">
                         <apex:pageBlockSection title="{!$Label.gw_volunteers__labelcontactinfoupcomingshifts}" columns="1" rendered="{!NOT(isEditing)}" >                               
                             <apex:pageBlockTable value="{!listUpcomingVolunteerHours}" var="hr" rules="none" styleClass="table" >
@@ -165,10 +165,10 @@
                         </apex:pageBlockSection> 
                     </div>
             
-                    <!-- Spacer ----------------------------------------- -->
+                    <!-- Spacer  -->
                     <div class="span1">&nbsp;</div>
                     
-                    <!-- Recent History ----------------------------------------- -->
+                    <!-- Recent History  -->
                     <div class="span5">
                         <apex:pageBlockSection title="{!$Label.gw_volunteers__labelcontactinfohistory}" columns="1" rendered="{!NOT(isEditing)}" >
                             <apex:pageBlockTable value="{!listCompletedVolunteerHours}" var="hr" rules="none" styleClass="table" >
