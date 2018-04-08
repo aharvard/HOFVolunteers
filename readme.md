@@ -61,7 +61,7 @@ These files deliver style updates for layout and logo graphics for branding.
 
 |resource|file name|
 |---|---|
-|CSS|HOF_Volunteers__CSS.css|
+|CSS|HOF_Volunteers__Stylesheet.css|
 |Gates Graphic|HOF_Volunteers__LogoArchStoneGray.svg|
 |HOF Lockup Graphic|HOF_Volunteers__LogoTextWhite.svg|
 
