@@ -18,27 +18,39 @@
 <!-- Load VolunteersPersonalSiteCSS.css -->
     <apex:stylesheet value="{!strURLtoCSSFile}" />
 
+    <!-- Modified Header -->
     <apex:insert name="header">
-        <div class="navbar navbar-static-top">
-            <div class="navbar-inner">
-                <h2>{!$Label.GW_Volunteers__labelPersonalSiteTitle}</h2>
-            </div>
-            <div class="navbar-inner">              
-                <ul class="nav">
-                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteJobListing', 'active', '')}">
-                        <a href="{!$Page.HOF_Volunteers__PersonalSiteJobListing + '?Language=' + Language + '&nMonthsToShow=6'}" >{!$Label.HOF_Volunteers__labelPersonalSiteJobListingTitle}</a>
-                    </li>
-                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteJobCalendar', 'active', '')}">
-                        <a href="{!$Page.HOF_Volunteers__PersonalSiteJobCalendar + '?Language=' + Language + '&nMonthsToShow=1'}" >{!$Label.HOF_Volunteers__labelPersonalSiteJobCalendarTitle}</a>
-                    </li>
-                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteContactInfo', 'active', '')}">
-                        <a href="{!$Page.HOF_Volunteers__PersonalSiteContactInfo + '?Language=' + Language}" >{!$Label.HOF_Volunteers__labelPersonalSiteContactInfoTitle}</a>
-                    </li>
-                    <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteReportHours', 'active', '')}">
-                        <a href="{!$Page.HOF_Volunteers__PersonalSiteReportHours + '?Language=' + Language}" >{!$Label.HOF_Volunteers__labelPersonalSiteReportHoursTitle}</a>
-                    </li>                
-                </ul>
-            </div>          
+        <!-- 
+            Updates Include:
+            1. Updates to Header Markup for styling
+            2. Updates to Nav labels & links
+         -->
+        <div class="hof-header">
+            <div class="container-fluid">
+                
+                <!-- Header Logo & Site Title -->
+                <div class="header-branding">
+                    <div class="header-logo"></div>
+                    <div class="site-title">{!$Label.GW_Volunteers__labelPersonalSiteTitle}</div>
+                </div>
+                
+                <!-- Site Nav -->
+                <nav class="hedaer-nav">              
+                    <ul>
+                        <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteJobListing', 'active', '')}">
+                            <a href="{!$Page.HOF_Volunteers__PersonalSiteJobListing + '?Language=' + Language + '&nMonthsToShow=6'}" >{!$Label.HOF_Volunteers__labelPersonalSiteJobListingTitle}</a>
+                        </li>
+                        <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteJobCalendar', 'active', '')}">
+                            <a href="{!$Page.HOF_Volunteers__PersonalSiteJobCalendar + '?Language=' + Language + '&nMonthsToShow=1'}" >{!$Label.HOF_Volunteers__labelPersonalSiteJobCalendarTitle}</a>
+                        </li>
+                        <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteContactInfo', 'active', '')}">
+                            <a href="{!$Page.HOF_Volunteers__PersonalSiteContactInfo + '?Language=' + Language}" >{!$Label.HOF_Volunteers__labelPersonalSiteContactInfoTitle}</a>
+                        </li>
+                        <li class="{!IF($CurrentPage.Name == 'HOF_Volunteers__PersonalSiteReportHours', 'active', '')}">
+                            <a href="{!$Page.HOF_Volunteers__PersonalSiteReportHours + '?Language=' + Language}" >{!$Label.HOF_Volunteers__labelPersonalSiteReportHoursTitle}</a>
+                        </li>                
+                    </ul>
+                </nav>          
         </div>
     </apex:insert>
     
@@ -46,7 +58,9 @@
         <apex:insert name="body" />
     </div>
     
+    <!-- Modified Footer -->
     <apex:insert name="footer">    
+        <!-- Simplifed for Styling -->
         <div class="hof-footer"></div>    
         <site:googleAnalyticsTracking />            
     </apex:insert>

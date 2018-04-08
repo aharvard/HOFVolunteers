@@ -22,6 +22,7 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - adds `apex:stylesheet` for brand fonts
 - removes inline style attributes from markup
 - updates navigation markup to use new custom labels and link to new files
+- updates navigation markup for new header styling
 - updates footer markup for new footer styling
 
 **HOF_Volunteers__PersonalSiteJobCalendar**
@@ -49,4 +50,4 @@ labelPersonalSiteReportHoursTitle|HOF_Volunteers__labelPersonalSiteReportHoursTi
 |HOF Lockup Graphic|HOF_Volunteers__LogoTextWhite.svg|
 
 ## Other Updates
-- Change Volunteer Site Name to "Volunteer Oakland"
+- Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Volunteer Oakland"
