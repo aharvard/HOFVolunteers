@@ -31,7 +31,8 @@ GW_Volunteers.PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - updates footer markup for new footer styling
 
 **HOF_Volunteers__PersonalSiteJobListing**
--  updates markup for job name heading 
+- updates markup for job name heading 
+- updates markup for list of volunteer jobs by wrapping in div for styling
 
 **HOF_Volunteers__PersonalSiteJobCalendar**
 -  _new file for future work, no updates_
