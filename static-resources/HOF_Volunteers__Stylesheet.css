@@ -11,12 +11,15 @@ main {
   }
   
   .color-swatches {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 10px;
   }
   
   .color {
+    -ms-flex: 1 1 220px;
     flex: 1 1 220px;
     padding: 50px 0;
     text-align: center;
@@ -174,33 +177,42 @@ main {
   }
   
   .hof-header .container-fluid {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
   }
   
   @media (max-width: 1100px) {
     .hof-header .container-fluid {
+      -ms-flex-direction: column;
       flex-direction: column;
     }
   }
   
   .hof-header .header-branding {
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
   }
   
   @media (max-width: 1100px) {
     .hof-header .header-branding {
+      -ms-flex: 1 1 auto;
       flex: 1 1 auto;
       margin-bottom: 10px;
       width: 100%;
+      -ms-flex-pack: center;
       justify-content: center;
     }
   }
   
   @media (max-width: 400px) {
     .hof-header .header-branding {
+      -ms-flex: 0 0 auto;
       flex: 0 0 auto;
     }
   }
@@ -210,6 +222,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     height: 40px;
+    -ms-flex: 0 0 50px;
     flex: 0 0 50px;
     padding: 10px;
     margin-right: 24px;
@@ -217,6 +230,7 @@ main {
   
   .hof-header .header-branding .site-title {
     padding: 30px 0;
+    -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     margin: 0 0 0.5em;
     font-weight: inherit;
@@ -230,6 +244,7 @@ main {
   
   @media (max-width: 1100px) {
     .hof-header .header-branding .site-title {
+      -ms-flex: 0 1 auto;
       flex: 0 1 auto;
     }
   }
@@ -237,30 +252,39 @@ main {
   @media (max-width: 700px) {}
   
   .hof-header .header-nav {
+    -ms-flex: 0 1 600px;
     flex: 0 1 600px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
   }
   
   @media (max-width: 1100px) {
     .hof-header .header-nav {
+      -ms-flex: 1 1 auto;
       flex: 1 1 auto;
       width: 100%;
     }
   }
   
   .hof-header .header-nav ul {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0;
     padding: 0;
     width: 100%;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
   }
   
   @media (max-width: 1100px) {
     .hof-header .header-nav ul {
+      -ms-flex-pack: distribute;
       justify-content: space-around;
       max-width: 750px;
       margin: auto;
@@ -269,6 +293,7 @@ main {
   
   @media (max-width: 480px) {
     .hof-header .header-nav ul {
+      -ms-flex-direction: column;
       flex-direction: column;
     }
   }
@@ -277,11 +302,13 @@ main {
     margin: 0;
     padding: 0;
     display: inline;
+    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
   
   @media (max-width: 700px) {
     .hof-header .header-nav li {
+      -ms-flex: 0 1 auto;
       flex: 0 1 auto;
     }
   }
@@ -335,7 +362,9 @@ main {
   
   .hof-jobs-list {
     width: 100%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (minmax(450px, 1fr))[auto-fill];
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 50px;
     margin-top: 50px;
