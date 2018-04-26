@@ -74,9 +74,13 @@ These files deliver style updates for layout and logo graphics for branding.
 |CSS|HOF_Volunteers__Stylesheet.css|
 |HOF White Gates Graphic|HOF_Volunteers__LogoArchStoneGray.svg|
 |HOF White Logo Graphic|hof-logo_white.svg|
+|Facebook Logo|hof_facebook.svg|
+|Instagram Logo|hof_instagram.svg|
+|Twitter Logo|hof_twitter.svg|
 
 ## Other Updates
 Some updates that must be made to existing items in salesforce.
 - Update Site Detail
     - Change Site Template to `HOF_PersonalSIteTemplate`
-- Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Volunteer Oakland"
+- Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Oakland Cemetery Volunteer"
+- After footer graphics are uploaded, make sure that the background-image URL is pointed to salesforce

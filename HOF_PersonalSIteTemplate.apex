@@ -62,9 +62,24 @@
     
     <!-- Modified Footer -->
     <apex:insert name="footer">    
-        <!-- Simplifed for Styling -->
-        <div class="hof-footer"></div>    
+        <footer class="hof-footer">
+            <p class="footer-thanks">Historic Oakland Foundation couldn’t preserve, restore, enhance, and share Oakland Cemetery without the time, dedication, energy, and passion of our volunteers. Thank you!</p>
+            <div class="footer-contact">
+                <h2>Questions, concerns, or comments about volunteering at Oakland?</h2>
+                <p>Contact Director of Programming and Volunteers, Richard Harker.</p>
+                <p>rharker@oaklandcemetery.com &nbsp; | &nbsp; 404-688-2107 ext. 15</p>
+                <ul class="footer-social">
+                    <li class="social-item"><a class="social-link facebook" href="https://www.facebook.com/OCATL/"> <span class="sr-only"> Facebook</span></a></li>
+                    <li class="social-item"><a class="social-link instagram" href="https://www.instagram.com/oaklandcemetery/"> <span class="sr-only">Instagram</span></a></li>
+                    <li class="social-item"><a class="social-link twitter" href="https://twitter.com/oaklandcemetery?lang=en"> <span class="sr-only">Twitter</span></a></li>
+                </ul>
+                <p><a href="http://www.oaklandcemetery.com/">oaklandcemetery.com</a></p>
+                <div class="footer-logo"></div>
+            </div>
+        </footer>    
         <site:googleAnalyticsTracking />            
     </apex:insert>
     
 </apex:page>
+
+
