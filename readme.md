@@ -44,11 +44,12 @@ GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours
 - updates markup to make page title h1
 
 **HOF_Volunteers__PersonalSiteContactInfo**
--  removes width from markup
-- TODO
-    - Make sure that headings are the appropriate level
-    - In Profile component, ensure that labels and values are displayed logically
-    - Investigate if Scheduled Shifts and Vol History can move up under 
+- removes width from markup
+- removes inline formating
+- updates bootstrap span classes (span5 & span7)
+- removes spacer elements
+- adds h1
+- reposition label to come before field
 
 **HOF_Volunteers__PersonalSiteReportHours**
 -  updates markup to make page title h1 
