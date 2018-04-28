@@ -73,7 +73,7 @@ These files deliver style updates for layout and logo graphics for branding.
 |---|---|
 |CSS|HOF_Volunteers__Stylesheet.css|
 |HOF White Gates Graphic|HOF_Volunteers__LogoArchStoneGray.svg|
-|HOF White Logo Graphic|hof-logo_white.svg|
+|HOF White Logo Graphic|hof-logo_off-black.svg|
 |Facebook Logo|hof_facebook.svg|
 |Instagram Logo|hof_instagram.svg|
 |Twitter Logo|hof_twitter.svg|
