@@ -31,7 +31,8 @@
                 <!-- Header Logo & Site Title -->
                 <div class="header-branding">
                     <div class="header-logo"></div>
-                    <div class="site-title">{!$Label.GW_Volunteers__labelPersonalSiteTitle}</div>
+                    <!-- <div class="site-title">{!$Label.GW_Volunteers__labelPersonalSiteTitle}</div> -->
+                    <div class="site-title">{!contactEdit.FirstName + ' ' + contactEdit.LastName}</div>
                 </div>
                 
                 <!-- Site Nav -->

@@ -59,7 +59,6 @@
 
                         <h1>Your Info</h1>
 
-                        <!-- Profile & Graph  -->
                         <div class="row-fluid">
 
                             <!-- Profile  -->
