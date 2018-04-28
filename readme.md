@@ -71,12 +71,12 @@ These files deliver style updates for layout and logo graphics for branding.
 
 |resource|file name|
 |---|---|
-|CSS|HOF_Volunteers__Stylesheet.css|
-|HOF Gates Graphic|HOF_Volunteers__LogoArchStoneGray.svg|
-|HOF Logo Graphic|hof-logo_off-black.svg|
-|Facebook Logo|hof_facebook.svg|
-|Instagram Logo|hof_instagram.svg|
-|Twitter Logo|hof_twitter.svg|
+|CSS|HOFVolunteersStylesheet.css|
+|HOF Arch Graphic|HOFVolunteersLogoArchStoneGray.svg|
+|HOF Logo Graphic|HOFLogoOffBlack.svg|
+|Facebook Logo|HOFFacebook.svg|
+|Instagram Logo|HOFInstagram.svg|
+|Twitter Logo|HOFTwitter.svg|
 
 ## Other Updates
 Some updates that must be made to existing items in salesforce.
@@ -84,3 +84,25 @@ Some updates that must be made to existing items in salesforce.
     - Change Site Template to `HOF_PersonalSIteTemplate`
 - Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Oakland Cemetery Volunteer"
 - After footer graphics are uploaded, make sure that the background-image URL is pointed to salesforce
+
+## Site Update Steps Take
+On Sat April 28th, the following updates occurred:
+1. Uploaded Static Resources
+    - HOFVolunteersStylesheet: New CSS for volunteer site update
+        - `HOFVolunteersStylesheet.css`
+        - Cache Control: Public
+    - HOFLogoOffBlack: Logo used in volunteer site footer
+        - `HOFLogoOffBlack.svg`
+        - Cache Control: Public
+    - HOFFacebook: Social media logo in volunteer site footer
+        - `HOFFacebook.svg`
+        - Cache Control: Public
+    - HOFInstagram: Social media logo in volunteer site footer
+        - `HOFInstagram.svg`
+        - Cache Control: Public
+    - HOFTwitter: Social media logo in volunteer site footer
+        - `HOFTwitter.svg`
+        - Cache Control: Public
+    - HOFVolunteersLogoArchStoneGray: Arch logo used in volunteer site header
+        - `HOFTwitter.svg`
+        - Cache Control: Public
