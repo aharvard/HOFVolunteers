@@ -21,6 +21,7 @@ GW_Volunteers__PersonalSiteJobCalendar | HOF_Volunteers__PersonalSiteJobCalendar
 GW_Volunteers__PersonalSiteContactInfo | HOF_Volunteers__PersonalSiteContactInfo | User Facing Page
 GW_Volunteers__PersonalSiteReportHours | HOF_Volunteers__PersonalSiteReportHours | User Facing Page
 
+
 ### Change Notes
 
 **HOF_PersonalSIteTemplate**
@@ -60,10 +61,11 @@ Updates to copy for navigation tabs must be done by making new labels and provid
 
 |orig label|orig val|new label|new val
 |---|---|---|---|
-labelPersonalSiteJobListingTitle|Volunteer Jobs|HOF_Volunteers_labelPersonalSiteJobListingTitle|Volunteer Jobs
-labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers_labelPersonalSiteJobCalendarTitle|Calendar
+labelPersonalSiteJobListingTitle|Volunteer Jobs|HOF_Volunteers_labelPersonalSiteJobListingTitle|Available Jobs
+labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers_labelPersonalSiteJobCalendarTitle|Shift Calendar
 labelPersonalSiteContactInfoTitle|View your information|HOF_Volunteers_labelPersonalSiteContactInfoTitle|Your Info
 labelPersonalSiteReportHoursTitle|Report Hours|HOF_Volunteers_labelPersonalSiteReportHoursTitle|Report Hours
+labelPersonalSiteTitle | Volunteers Personal Site | HOF_Volunteers_labelPersonalSiteTitle | Oakland Cemetery Volunteer
 
 ## New Static Resources
 
@@ -82,7 +84,6 @@ These files deliver style updates for layout and logo graphics for branding.
 Some updates that must be made to existing items in salesforce.
 - Update Site Detail
     - Change Site Template to `HOF_PersonalSIteTemplate`
-- Change Volunteer `labelPersonalSiteTitle` label from "Volunteers Personal Site" to "Oakland Cemetery Volunteer"
 - After footer graphics are uploaded, make sure that the background-image URL is pointed to salesforce
 
 ## Site Update Steps Take
@@ -110,16 +111,20 @@ On Sat April 28th, the following updates occurred:
     - **HOF_Volunteers_labelPersonalSiteJobListingTitle**: 
         - description: Vol site nav label
         - name: HOF_Volunteers_labelPersonalSiteJobListingTitle
-        - value: Oakland Cemetery Volunteer
+        - value: Available Jobs
     - **HOF_Volunteers_labelPersonalSiteJobCalendarTitle**
         - description: Vol site nav label 
-        - name:
-        - value: 
+        - name: HOF_Volunteers_labelPersonalSiteJobCalendarTitle
+        - value: Shift Calendar
     - **HOF_Volunteers_labelPersonalSiteContactInfoTitle**
         - description: Vol site nav label 
-        - name:
-        - value: 
+        - name: HOF_Volunteers_labelPersonalSiteContactInfoTitle
+        - value: Your Info
     - **HOF_Volunteers_labelPersonalSiteReportHoursTitle**
         - description: Vol site nav label 
-        - name:
-        - value: 
+        - name: HOF_Volunteers_labelPersonalSiteReportHoursTitle
+        - value: Report Hours
+    - **HOF_Volunteers_labelPersonalSiteTitle**
+        - description: Vol site title 
+        - name: HOF_Volunteers_labelPersonalSiteTitle
+        - value: Oakland Cemetery Volunteer
