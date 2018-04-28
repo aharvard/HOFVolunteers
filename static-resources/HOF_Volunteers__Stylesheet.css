@@ -431,17 +431,22 @@ a {
 
 .hof-footer .footer-contact {
   box-shadow: 0 140px 160px -90px rgba(0, 0, 0, 0.4);
-  background: #b64a64;
+  background: #e6d990;
   padding: 50px;
   margin: 60px auto 60px;
   max-width: 1000px;
   position: relative;
+  color: #222;
+}
+
+.hof-footer .footer-contact p {
+  color: #222;
 }
 
 .hof-footer .footer-logo {
   height: 100px;
   width: 90px;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/211696/hof-logo_white.svg);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/211696/hof-logo_off-black.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -450,12 +455,12 @@ a {
 }
 
 .hof-footer p {
-  color: white;
   margin: 0;
+  color: white;
 }
 
 .hof-footer a {
-  color: white;
+  color: #7e4f5f;
   text-decoration: underline;
 }
 
@@ -492,7 +497,7 @@ a {
 }
 
 .hof-footer .facebook {
-  background-image: url(/hof_facbook.svg);
+  background-image: url(/hof_facebook.svg);
 }
 
 .hof-footer .twitter {
