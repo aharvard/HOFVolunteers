@@ -60,10 +60,10 @@ Updates to copy for navigation tabs must be done by making new labels and provid
 
 |orig label|orig val|new label|new val
 |---|---|---|---|
-labelPersonalSiteJobListingTitle|Volunteer Jobs|HOF_Volunteers__labelPersonalSiteJobListingTitle|Volunteer Jobs
-labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers__labelPersonalSiteJobCalendarTitle|Calendar
-labelPersonalSiteContactInfoTitle|View your information|HOF_Volunteers__labelPersonalSiteContactInfoTitle|Your Info
-labelPersonalSiteReportHoursTitle|Report Hours|HOF_Volunteers__labelPersonalSiteReportHoursTitle|Report Hours
+labelPersonalSiteJobListingTitle|Volunteer Jobs|HOF_Volunteers_labelPersonalSiteJobListingTitle|Volunteer Jobs
+labelPersonalSiteJobCalendarTitle|Job Calendar|HOF_Volunteers_labelPersonalSiteJobCalendarTitle|Calendar
+labelPersonalSiteContactInfoTitle|View your information|HOF_Volunteers_labelPersonalSiteContactInfoTitle|Your Info
+labelPersonalSiteReportHoursTitle|Report Hours|HOF_Volunteers_labelPersonalSiteReportHoursTitle|Report Hours
 
 ## New Static Resources
 
@@ -88,21 +88,38 @@ Some updates that must be made to existing items in salesforce.
 ## Site Update Steps Take
 On Sat April 28th, the following updates occurred:
 1. Uploaded Static Resources
-    - HOFVolunteersStylesheet: New CSS for volunteer site update
+    - **HOFVolunteersStylesheet**: New CSS for volunteer site update
         - `HOFVolunteersStylesheet.css`
         - Cache Control: Public
-    - HOFLogoOffBlack: Logo used in volunteer site footer
+    - **HOFLogoOffBlack**: Logo used in volunteer site footer
         - `HOFLogoOffBlack.svg`
         - Cache Control: Public
-    - HOFFacebook: Social media logo in volunteer site footer
+    - **HOFFacebook**: Social media logo in volunteer site footer
         - `HOFFacebook.svg`
         - Cache Control: Public
-    - HOFInstagram: Social media logo in volunteer site footer
+    - **HOFInstagram**: Social media logo in volunteer site footer
         - `HOFInstagram.svg`
         - Cache Control: Public
-    - HOFTwitter: Social media logo in volunteer site footer
+    - **HOFTwitter**: Social media logo in volunteer site footer
         - `HOFTwitter.svg`
         - Cache Control: Public
-    - HOFVolunteersLogoArchStoneGray: Arch logo used in volunteer site header
+    - **HOFVolunteersLogoArchStoneGray**: Arch logo used in volunteer site header
         - `HOFTwitter.svg`
         - Cache Control: Public
+1. Created New Labels
+    - **HOF_Volunteers_labelPersonalSiteJobListingTitle**: 
+        - description: Vol site nav label
+        - name: HOF_Volunteers_labelPersonalSiteJobListingTitle
+        - value: Oakland Cemetery Volunteer
+    - **HOF_Volunteers_labelPersonalSiteJobCalendarTitle**
+        - description: Vol site nav label 
+        - name:
+        - value: 
+    - **HOF_Volunteers_labelPersonalSiteContactInfoTitle**
+        - description: Vol site nav label 
+        - name:
+        - value: 
+    - **HOF_Volunteers_labelPersonalSiteReportHoursTitle**
+        - description: Vol site nav label 
+        - name:
+        - value: 
